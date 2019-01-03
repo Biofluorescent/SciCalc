@@ -34,11 +34,13 @@ class ViewController: UIViewController {
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
     @IBAction func inverseButtonPressed(_ sender: Any) {
         if inverseActive == false {
             sin.setTitle("sin⁻¹", for: .normal)
@@ -59,10 +61,21 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func clearButtonPressed(_ sender: Any) {
-        displayValue = 0
+    
+    private var calculator = CalculatorLogic()
+    
+    @IBAction func calcButtonPressed(_ sender: UIButton) {
         isFinishedTypingNumber = true
+        calculator.setNumber(displayValue)
+        
+        if let calcMethod = sender.currentTitle {
+            if let result = calculator.calculate(symbol: calcMethod){
+                displayValue = result
+            }
+        }
+        
     }
+    
     
     @IBAction func numberButtonPressed(_ sender: UIButton) {
 //        print(sender.tag)
