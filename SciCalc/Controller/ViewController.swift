@@ -20,8 +20,18 @@ class ViewController: UIViewController {
     
     private var inverseActive : Bool = false
     private var isFinishedTypingNumber : Bool = false
-    var memoryNumber : Double = 0
     
+    /*
+    private var memoryDisplay : Double {
+        get {
+           guard let number = Double(
+        }
+        set {
+            
+        }
+    }
+ */
+ 
     private var displayValue : Double {
         get {
             guard let number = Double(displayNumber.text!) else {
@@ -37,7 +47,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        _ = calculator.calculate(symbol: "C")
     }
 
     
@@ -72,6 +82,8 @@ class ViewController: UIViewController {
             if let result = calculator.calculate(symbol: calcMethod){
                 displayValue = result
             }
+            
+            //if calcMethod == "CE" { memoryNumber = 0 }
         }
         
     }

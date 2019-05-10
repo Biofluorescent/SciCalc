@@ -27,8 +27,22 @@ struct CalculatorLogic {
                 return n * -1
             case "C":
                 return 0
+            case "CE":
+                return 0
             case "%":
                 return n * 0.01
+            case "n!":
+                return factorial(num: n)
+            case "1/x":
+                return 1 / n
+            case "π":
+                return Double.pi
+            case "√":
+                if n < 0 {
+                    return n
+                } else {
+                    return sqrt(n)
+                }
             case "=":
                 return performTwoNumberCalculation(n2: n)
             default:
@@ -52,12 +66,19 @@ struct CalculatorLogic {
                 return n1 / n2
             case "-":
                 return n1 - n2
+            case "EXP":
+                return n1 * pow(10.0, n2)
             default:
                 fatalError("The operation passed in does not match any of the cases.")
             }
             
         }
         return nil
+    }
+    
+    func factorial(num: Double) -> Double {
+        if num <= 1 { return num }
+        return num * factorial(num: num - 1)
     }
     
 }
