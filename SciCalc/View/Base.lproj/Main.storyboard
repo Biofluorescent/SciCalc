@@ -34,14 +34,21 @@
                                                 <rect key="frame" x="0.0" y="39.5" width="355" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-Rr-fC1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="20"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M = 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip3-eb-ldY">
-                                                        <rect key="frame" x="174" y="0.0" width="181" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory =" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ii-XC-pCh">
+                                                        <rect key="frame" x="116" y="0.0" width="123" height="20"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip3-eb-ldY">
+                                                        <rect key="frame" x="232" y="0.0" width="123" height="20"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -72,6 +79,9 @@
                                                 <state key="normal" title="Degree">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="measureChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdO-Sw-zAf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gI-NP-v8f">
                                                 <rect key="frame" x="145.5" y="0.0" width="63.5" height="60"/>
@@ -123,6 +133,9 @@
                                                 <state key="normal" title="MC">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="memoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Bk-P4-jqj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWw-He-rv7">
                                                 <rect key="frame" x="73" y="0.0" width="63" height="59.5"/>
@@ -131,6 +144,9 @@
                                                 <state key="normal" title="MR">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="memoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hm-u3-MUC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flU-sg-aPg">
                                                 <rect key="frame" x="146" y="0.0" width="63" height="59.5"/>
@@ -139,6 +155,9 @@
                                                 <state key="normal" title="MS">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="memoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgQ-Xi-VYf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5D-KN-lch">
                                                 <rect key="frame" x="219" y="0.0" width="63" height="59.5"/>
@@ -147,6 +166,9 @@
                                                 <state key="normal" title="M+">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="memoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rli-ID-3kL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94Z-8P-Izd">
                                                 <rect key="frame" x="292" y="0.0" width="63" height="59.5"/>
@@ -155,6 +177,9 @@
                                                 <state key="normal" title="M-">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="memoryButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJk-2c-DqR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -511,9 +536,12 @@
                     </view>
                     <connections>
                         <outlet property="cos" destination="x5G-er-S4x" id="Hjp-rk-nZI"/>
+                        <outlet property="degRadButton" destination="7Ih-Nr-ERq" id="GTX-dg-fkK"/>
+                        <outlet property="degRadLabel" destination="SDf-Rr-fC1" id="yqt-FU-aRN"/>
                         <outlet property="displayNumber" destination="8Sn-ac-N7H" id="W6h-nF-psF"/>
                         <outlet property="ln" destination="P1U-wx-XZw" id="Dj8-6b-CYz"/>
                         <outlet property="log" destination="Pkh-xE-fTF" id="t1U-jm-b9u"/>
+                        <outlet property="memoryDisplay" destination="ip3-eb-ldY" id="ehs-n3-CGZ"/>
                         <outlet property="sin" destination="XKU-6D-0p8" id="zOy-Z3-IKN"/>
                         <outlet property="tan" destination="zOp-ql-pgz" id="QX9-8T-oTd"/>
                         <outlet property="yToX" destination="7Xj-5c-ue5" id="eQb-dy-CcU"/>
@@ -521,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-278" y="140"/>
         </scene>
     </scenes>
 </document>

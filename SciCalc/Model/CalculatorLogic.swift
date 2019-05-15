@@ -11,6 +11,7 @@ import Foundation
 struct CalculatorLogic {
     
     private var number: Double?
+    private var memory: Double = 0.0
     
     // Optional Tuple
     private var intermediateCalculation: (n1: Double, calcMethod: String)?
@@ -28,6 +29,7 @@ struct CalculatorLogic {
             case "C":
                 return 0
             case "CE":
+                memory = 0
                 return 0
             case "%":
                 return n * 0.01
@@ -81,4 +83,31 @@ struct CalculatorLogic {
         return num * factorial(num: num - 1)
     }
     
+    
+    mutating func updateMemory(symbol: String, input: Double) -> Double? {
+        
+        switch symbol {
+        case "MC":
+            memory = 0
+            return 0
+        case "MS":
+            memory = input
+            return memory
+        case "MR":
+            return memory
+        case "M+":
+            memory += input
+            return memory
+        case "M-":
+            memory -= input
+            return memory
+        default:
+            fatalError("The operation passed in does not match any of the cases.")
+        }
+        
+    }
+    
+    func recallMemory() -> Double {
+        return memory
+    }
 }

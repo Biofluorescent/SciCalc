@@ -17,20 +17,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var ln: UIButton!
     @IBOutlet weak var yToX: UIButton!
     @IBOutlet weak var displayNumber: UILabel!
+    @IBOutlet var memoryDisplay: UILabel!
+    @IBOutlet var degRadLabel: UILabel!
+    @IBOutlet var degRadButton: UIButton!
     
     private var inverseActive : Bool = false
     private var isFinishedTypingNumber : Bool = false
     
-    /*
-    private var memoryDisplay : Double {
+
+    private var memoryValue : Double {
         get {
-           guard let number = Double(
+            guard let number = Double(memoryDisplay.text!) else {
+                fatalError("Cannot convert display label text to Double.")
+            }
+            return number
         }
         set {
-            
+            memoryDisplay.text = String(newValue)
         }
     }
- */
+ 
  
     private var displayValue : Double {
         get {
@@ -50,6 +56,15 @@ class ViewController: UIViewController {
         _ = calculator.calculate(symbol: "C")
     }
 
+    @IBAction func measureChange(_ sender: UIButton) {
+        if sender.titleLabel?.text == "Degree" {
+            degRadButton.setTitle("Radian", for: .normal)
+            degRadLabel.text = "Rad"
+        }else {
+            degRadButton.setTitle("Degree", for: .normal)
+            degRadLabel.text = "Deg"
+        }
+    }
     
     @IBAction func inverseButtonPressed(_ sender: Any) {
         if inverseActive == false {
@@ -83,7 +98,7 @@ class ViewController: UIViewController {
                 displayValue = result
             }
             
-            //if calcMethod == "CE" { memoryNumber = 0 }
+            if calcMethod == "CE" { memoryValue = 0 }
         }
         
     }
@@ -111,6 +126,19 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func memoryButtonPressed(_ sender: UIButton) {
+        
+        if let memMethod = sender.currentTitle {
+            if let result = calculator.updateMemory(symbol: memMethod, input: displayValue) {
+                memoryValue = result
+                
+                if memMethod == "MR" {
+                    displayValue = result
+                }
+            }
+        }
+        
+    }
     
 }
 
