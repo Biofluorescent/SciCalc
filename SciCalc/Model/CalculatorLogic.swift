@@ -7,17 +7,27 @@
 //
 
 import Foundation
+import Darwin
 
 struct CalculatorLogic {
     
     private var number: Double?
     private var memory: Double = 0.0
+    private var angle: String = "Rad"
     
     // Optional Tuple
     private var intermediateCalculation: (n1: Double, calcMethod: String)?
     
     mutating func setNumber(_ number: Double){
         self.number = number
+    }
+    
+    mutating func invertAngle() {
+        if angle == "Rad" {
+            angle = "Deg"
+        } else {
+            angle = "Rad"
+        }
     }
     
     mutating func calculate(symbol: String) -> Double? {
@@ -45,6 +55,26 @@ struct CalculatorLogic {
                 } else {
                     return sqrt(n)
                 }
+                
+            case "sin":
+                if angle == "Deg" { return __sinpi(n/180.0) }
+                return sin(n)
+            case "sin⁻¹":
+                if angle == "Deg" { return asin(n)*180.0/Double.pi }
+                return asin(n)
+            case "cos":
+                if angle == "Deg" { return __cospi(n/180.0) }
+                return cos(n)
+            case "cos⁻¹":
+                if angle == "Deg" { return acos(n)*180.0/Double.pi }
+                return acos(n)
+            case "tan":
+                if angle == "Deg" { return __tanpi(n/180.0) }
+                return tan(n)
+            case "tan⁻¹":
+                if angle == "Deg" { return atan(n)*180.0/Double.pi }
+                return atan(n)
+                
             case "=":
                 return performTwoNumberCalculation(n2: n)
             default:
@@ -110,4 +140,5 @@ struct CalculatorLogic {
     func recallMemory() -> Double {
         return memory
     }
+    
 }

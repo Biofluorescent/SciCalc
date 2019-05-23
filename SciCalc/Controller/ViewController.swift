@@ -64,6 +64,8 @@ class ViewController: UIViewController {
             degRadButton.setTitle("Degree", for: .normal)
             degRadLabel.text = "Deg"
         }
+        
+        calculator.invertAngle()
     }
     
     @IBAction func inverseButtonPressed(_ sender: Any) {
