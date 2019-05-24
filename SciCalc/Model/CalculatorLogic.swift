@@ -55,7 +55,14 @@ struct CalculatorLogic {
                 } else {
                     return sqrt(n)
                 }
-                
+            case "10ˣ":
+                return pow(10, n)
+            case "log":
+                return logC(val: n, forBase: 10)
+            case "ln":
+                return logC(val: n, forBase: Darwin.M_E)
+            case "eˣ":
+                return pow(Darwin.M_E, n)
             case "sin":
                 if angle == "Deg" { return __sinpi(n/180.0) }
                 return sin(n)
@@ -100,6 +107,10 @@ struct CalculatorLogic {
                 return n1 - n2
             case "EXP":
                 return n1 * pow(10.0, n2)
+            case "yˣ":
+                return pow(n1, n2)
+            case "ˣ√y":
+                return pow(n1, (1.0/n2))
             default:
                 fatalError("The operation passed in does not match any of the cases.")
             }
@@ -108,7 +119,7 @@ struct CalculatorLogic {
         return nil
     }
     
-    func factorial(num: Double) -> Double {
+    private func factorial(num: Double) -> Double {
         if num <= 1 { return num }
         return num * factorial(num: num - 1)
     }
@@ -139,6 +150,10 @@ struct CalculatorLogic {
     
     func recallMemory() -> Double {
         return memory
+    }
+    
+    private func logC(val: Double, forBase base: Double) -> Double {
+        return log(val)/log(base)
     }
     
 }
