@@ -13,7 +13,18 @@
 		7B267AD821C3277D00BAD374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B267AD721C3277D00BAD374 /* Assets.xcassets */; };
 		7B267ADB21C3277D00BAD374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B267AD921C3277D00BAD374 /* LaunchScreen.storyboard */; };
 		7B4EC57321DD8092007A2786 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4EC57221DD8092007A2786 /* CalculatorLogic.swift */; };
+		7BB09C8522AA0C650010D754 /* SciCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB09C8422AA0C650010D754 /* SciCalcTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BB09C8722AA0C650010D754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B267AC521C3277D00BAD374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B267ACC21C3277D00BAD374;
+			remoteInfo = SciCalc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7B267ACD21C3277D00BAD374 /* SciCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		7B267ADA21C3277D00BAD374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B267ADC21C3277D00BAD374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B4EC57221DD8092007A2786 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
+		7BB09C8222AA0C640010D754 /* SciCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SciCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB09C8422AA0C650010D754 /* SciCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciCalcTests.swift; sourceTree = "<group>"; };
+		7BB09C8622AA0C650010D754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7B267ACA21C3277D00BAD374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB09C7F22AA0C640010D754 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				7B267ACF21C3277D00BAD374 /* SciCalc */,
+				7BB09C8322AA0C650010D754 /* SciCalcTests */,
 				7B267ACE21C3277D00BAD374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				7B267ACD21C3277D00BAD374 /* SciCalc.app */,
+				7BB09C8222AA0C640010D754 /* SciCalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +114,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		7BB09C8322AA0C650010D754 /* SciCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB09C8422AA0C650010D754 /* SciCalcTests.swift */,
+				7BB09C8622AA0C650010D754 /* Info.plist */,
+			);
+			path = SciCalcTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,18 +143,40 @@
 			productReference = 7B267ACD21C3277D00BAD374 /* SciCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7BB09C8122AA0C640010D754 /* SciCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB09C8B22AA0C650010D754 /* Build configuration list for PBXNativeTarget "SciCalcTests" */;
+			buildPhases = (
+				7BB09C7E22AA0C640010D754 /* Sources */,
+				7BB09C7F22AA0C640010D754 /* Frameworks */,
+				7BB09C8022AA0C640010D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB09C8822AA0C650010D754 /* PBXTargetDependency */,
+			);
+			name = SciCalcTests;
+			productName = SciCalcTests;
+			productReference = 7BB09C8222AA0C640010D754 /* SciCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7B267AC521C3277D00BAD374 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Tanner Quesenberry";
 				TargetAttributes = {
 					7B267ACC21C3277D00BAD374 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					7BB09C8122AA0C640010D754 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7B267ACC21C3277D00BAD374;
 					};
 				};
 			};
@@ -140,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				7B267ACC21C3277D00BAD374 /* SciCalc */,
+				7BB09C8122AA0C640010D754 /* SciCalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +207,13 @@
 				7B267ADB21C3277D00BAD374 /* LaunchScreen.storyboard in Resources */,
 				7B267AD821C3277D00BAD374 /* Assets.xcassets in Resources */,
 				7B267AD621C3277D00BAD374 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB09C8022AA0C640010D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +230,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BB09C7E22AA0C640010D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB09C8522AA0C650010D754 /* SciCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BB09C8822AA0C650010D754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B267ACC21C3277D00BAD374 /* SciCalc */;
+			targetProxy = 7BB09C8722AA0C650010D754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7B267AD421C3277D00BAD374 /* Main.storyboard */ = {
@@ -342,6 +420,48 @@
 			};
 			name = Release;
 		};
+		7BB09C8922AA0C650010D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5TJ75YJKFB;
+				INFOPLIST_FILE = SciCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tannerquesenberry.SciCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciCalc.app/SciCalc";
+			};
+			name = Debug;
+		};
+		7BB09C8A22AA0C650010D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5TJ75YJKFB;
+				INFOPLIST_FILE = SciCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tannerquesenberry.SciCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciCalc.app/SciCalc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +479,15 @@
 			buildConfigurations = (
 				7B267AE021C3277D00BAD374 /* Debug */,
 				7B267AE121C3277D00BAD374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB09C8B22AA0C650010D754 /* Build configuration list for PBXNativeTarget "SciCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB09C8922AA0C650010D754 /* Debug */,
+				7BB09C8A22AA0C650010D754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
