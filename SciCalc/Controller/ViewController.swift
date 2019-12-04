@@ -111,17 +111,31 @@ class ViewController: UIViewController {
         if let numValue = sender.currentTitle {
             
             if isFinishedTypingNumber {
-                displayNumber.text = numValue
+                if numValue == "." {
+                    displayNumber.text = "0."
+                }else {
+                    displayNumber.text = numValue
+                }
+                
                 isFinishedTypingNumber = false
             } else {
                 
                 if numValue == "." {
-                    
+                    /*
                     let isInt = floor(displayValue) == displayValue
                     
-                    if !isInt {
+                    if !isInt && floor(displayValue) != 0 {
                         return
                     }
+                    */
+                    
+                
+                    if let value = displayNumber.text {
+                        if value.contains("."){
+                            return
+                        }
+                    }
+    
                 }
                 displayNumber.text = displayNumber.text! + numValue
             }
@@ -140,6 +154,20 @@ class ViewController: UIViewController {
             }
         }
         
+    }
+    
+    
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        if !isFinishedTypingNumber {
+        if var value = displayNumber.text {
+            if value.count > 1 {
+                _ = value.removeLast()
+                displayNumber.text = value
+            }else if value.count == 1 {
+                displayNumber.text = "0"
+            }
+        }
+    }
     }
     
 }

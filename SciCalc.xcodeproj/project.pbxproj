@@ -173,6 +173,7 @@
 				TargetAttributes = {
 					7B267ACC21C3277D00BAD374 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
 					};
 					7BB09C8122AA0C640010D754 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -397,7 +398,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tannerquesenberry.SciCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -415,7 +416,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tannerquesenberry.SciCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
