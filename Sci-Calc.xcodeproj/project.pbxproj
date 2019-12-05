@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B267ACD21C3277D00BAD374 /* SciCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B267ACD21C3277D00BAD374 /* Sci-Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sci-Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B267AD021C3277D00BAD374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B267AD221C3277D00BAD374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B267AD521C3277D00BAD374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		7B267ADA21C3277D00BAD374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B267ADC21C3277D00BAD374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B4EC57221DD8092007A2786 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
-		7BB09C8222AA0C640010D754 /* SciCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SciCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB09C8222AA0C640010D754 /* Sci-CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sci-CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB09C8422AA0C650010D754 /* SciCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciCalcTests.swift; sourceTree = "<group>"; };
 		7BB09C8622AA0C650010D754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 		7B267ACE21C3277D00BAD374 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B267ACD21C3277D00BAD374 /* SciCalc.app */,
-				7BB09C8222AA0C640010D754 /* SciCalcTests.xctest */,
+				7B267ACD21C3277D00BAD374 /* Sci-Calc.app */,
+				7BB09C8222AA0C640010D754 /* Sci-CalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B267ACC21C3277D00BAD374 /* SciCalc */ = {
+		7B267ACC21C3277D00BAD374 /* Sci-Calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B267ADF21C3277D00BAD374 /* Build configuration list for PBXNativeTarget "SciCalc" */;
+			buildConfigurationList = 7B267ADF21C3277D00BAD374 /* Build configuration list for PBXNativeTarget "Sci-Calc" */;
 			buildPhases = (
 				7B267AC921C3277D00BAD374 /* Sources */,
 				7B267ACA21C3277D00BAD374 /* Frameworks */,
@@ -138,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = SciCalc;
+			name = "Sci-Calc";
 			productName = SciCalc;
-			productReference = 7B267ACD21C3277D00BAD374 /* SciCalc.app */;
+			productReference = 7B267ACD21C3277D00BAD374 /* Sci-Calc.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7BB09C8122AA0C640010D754 /* SciCalcTests */ = {
+		7BB09C8122AA0C640010D754 /* Sci-CalcTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BB09C8B22AA0C650010D754 /* Build configuration list for PBXNativeTarget "SciCalcTests" */;
+			buildConfigurationList = 7BB09C8B22AA0C650010D754 /* Build configuration list for PBXNativeTarget "Sci-CalcTests" */;
 			buildPhases = (
 				7BB09C7E22AA0C640010D754 /* Sources */,
 				7BB09C7F22AA0C640010D754 /* Frameworks */,
@@ -156,9 +156,9 @@
 			dependencies = (
 				7BB09C8822AA0C650010D754 /* PBXTargetDependency */,
 			);
-			name = SciCalcTests;
+			name = "Sci-CalcTests";
 			productName = SciCalcTests;
-			productReference = 7BB09C8222AA0C640010D754 /* SciCalcTests.xctest */;
+			productReference = 7BB09C8222AA0C640010D754 /* Sci-CalcTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B267AC821C3277D00BAD374 /* Build configuration list for PBXProject "SciCalc" */;
+			buildConfigurationList = 7B267AC821C3277D00BAD374 /* Build configuration list for PBXProject "Sci-Calc" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -194,8 +194,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B267ACC21C3277D00BAD374 /* SciCalc */,
-				7BB09C8122AA0C640010D754 /* SciCalcTests */,
+				7B267ACC21C3277D00BAD374 /* Sci-Calc */,
+				7BB09C8122AA0C640010D754 /* Sci-CalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,7 +244,7 @@
 /* Begin PBXTargetDependency section */
 		7BB09C8822AA0C650010D754 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B267ACC21C3277D00BAD374 /* SciCalc */;
+			target = 7B267ACC21C3277D00BAD374 /* Sci-Calc */;
 			targetProxy = 7BB09C8722AA0C650010D754 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tannerquesenberry.SciCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -417,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tannerquesenberry.SciCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -438,7 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciCalc.app/SciCalc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sci-Calc.app/Sci-Calc";
 			};
 			name = Debug;
 		};
@@ -459,14 +459,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SciCalc.app/SciCalc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sci-Calc.app/Sci-Calc";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B267AC821C3277D00BAD374 /* Build configuration list for PBXProject "SciCalc" */ = {
+		7B267AC821C3277D00BAD374 /* Build configuration list for PBXProject "Sci-Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B267ADD21C3277D00BAD374 /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B267ADF21C3277D00BAD374 /* Build configuration list for PBXNativeTarget "SciCalc" */ = {
+		7B267ADF21C3277D00BAD374 /* Build configuration list for PBXNativeTarget "Sci-Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B267AE021C3277D00BAD374 /* Debug */,
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BB09C8B22AA0C650010D754 /* Build configuration list for PBXNativeTarget "SciCalcTests" */ = {
+		7BB09C8B22AA0C650010D754 /* Build configuration list for PBXNativeTarget "Sci-CalcTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BB09C8922AA0C650010D754 /* Debug */,
